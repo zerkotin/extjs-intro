@@ -12,7 +12,8 @@ This will compile the app at the current folder
 
 The options are as follows:
 
-```Categories
+```
+Categories
   * app - Perform various application build processes
   * compile - Compile sources to produce concatenated output and metadata
   * cordova - Quick init Support for Cordova
