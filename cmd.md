@@ -61,7 +61,7 @@ in this case, after compilation the app is available at `http://localhost:1841/`
 Packages can be dynamically loaded and/or be reused in several projects.  
 
 To generate a package:  
-`sencha generate package PackageName`  
+`sencha generate package package-name`  
 
 ## Building a package
 
