@@ -70,13 +70,13 @@ Ext.define('My.own.WindowBottomBar', {
 });
 ```
 
-What features do we see in that class?
+### What features do we see in that class?
 1. `extend` - used for inheritance/extension
 2. `config` - a block used to expose API just like in modules, it also provides a lifecycle which we will shortly discuss
 3. `applyTitle` - `apply` and `update` are called as a part of the lifecycle of a config, in addition it also provides a getter and a setter
 4. `My.own.WindowBottomBar` - a 2nd component which is used as a child component
 
-How do we use that?
+### How do we use that?
 ```javascript
 ar myWindow = Ext.create('My.own.Window', { //creating my own window
     title: 'Hello World',
@@ -98,6 +98,30 @@ myWindow.setBottomBar({ height: 100 });
 alert(myWindow.getBottomBar().getHeight()); // alerts 100
 ```
 
+### Statics
+A short example that creates a factory using statics and config
+```javascript
+Ext.define('Computer', { //a computer class
+    statics: {
+        instanceCount: 0, //just for example
+        factory: function(brand) { //creates a new Computer instance and passes the 'brand' config to the constructor
+            // 'this' in static methods refer to the class itself
+            return new this({brand: brand}); //we can just add the config in the constructor
+        }
+    },
+
+    config: {
+        brand: null //brand config, now we have a getter, a setter, apply and update
+    }
+});
+
+var dellComputer = Computer.factory('Dell'); //create a dell computer
+var appleComputer = Computer.factory('Mac'); //create a Mac
+
+alert(appleComputer.getBrand()); // using the auto-generated getter to get the value of a config property. Alerts "Mac"
+```
+
+Now lets see some [Layouts](extjs-layouts.js)
 
 
 
