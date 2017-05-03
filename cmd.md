@@ -39,12 +39,12 @@ Commands
   * which - Displays the path to the current version of Sencha Cmd
   ```
   
-## Generating a new App
+### Generating a new App
 
 To generate a new App skeleton:  
 `sencha -sdk /extjs-repository-path generate app AppName /app-name-path`
 
-## Building the app
+### Building the app
 
 To compile sass and bundle the sources for production:  
 `sencha app build`
@@ -56,22 +56,28 @@ To compile for development with a watcher and a webserver:
 `sencha app watch`  
 in this case, after compilation the app is available at `http://localhost:1841/`  
 
-## Generating a package
+### Generating a package
 
 Packages can be dynamically loaded and/or be reused in several projects.  
 
 To generate a package:  
 `sencha generate package package-name`  
 
-## Building a package
+### Building a package
 
 To build a package:  
 `sencha package build`  
 
+## The Repository
+
+### Listing
+
+To list the contents of the local repository:  
+`sencha repository list`  
+
+### Add to repository
+
+To add a package to the local repository:  
+`sencha package add foo.pkg`  
 
 
-
-
-
-  
-  
