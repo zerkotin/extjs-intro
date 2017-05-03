@@ -1,10 +1,11 @@
 sencha cmd
 
-a sencha command will look like:  
+A simple sencha command will usually look like:  
 `sencha [category] [command]`
 
-example:  
-`sencha app build`
+Example:  
+`sencha app build` //will compile the app at the current folder
+
 
 the options are as follows:
 
