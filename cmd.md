@@ -6,7 +6,8 @@ A simple sencha command will usually look like:
 `sencha [category] [command]`
 
 Example:  
-`sencha app build` //will compile the app at the current folder
+`sencha app build`  
+This will compile the app at the current folder
 
 
 The options are as follows:
@@ -41,7 +42,7 @@ Commands
 ## Generating a new App
 
 To generate a new App skeleton:  
-`sencha -sdk /extjs-repo generate app AppName /app-name`
+`sencha -sdk /extjs-repository-path generate app AppName /app-name-path`
 
 ## Building the app
 
