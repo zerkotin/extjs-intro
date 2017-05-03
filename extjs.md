@@ -53,7 +53,7 @@ Ext.Viewport.add({
 });
 ```
 What do we see here? a _Viewport_, and what is that _xtype_ ?  
-
+We will get there, lets start with [Ext Classes](extjs-classes.md) first.
 
 
 
