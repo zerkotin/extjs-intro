@@ -2,7 +2,7 @@
 
 ## Using the CMD
 
-A simple sencha command will usually look like:  
+A simple sencha command will usually look like   
 `sencha [category] [command] [options]`
 
 Example:  
