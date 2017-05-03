@@ -6,7 +6,7 @@ A simple sencha command will usually look like:
 `sencha [category] [command] [options]`
 
 Example:  
-`sencha app build`  
+`sencha app build development`  
 This will compile the app at the current folder
 
 
