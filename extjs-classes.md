@@ -121,7 +121,7 @@ var appleComputer = Computer.factory('Mac'); //create a Mac
 alert(appleComputer.getBrand()); // using the auto-generated getter to get the value of a config property. Alerts "Mac"
 ```
 
-Now lets see some [Layouts](extjs-layouts.js)
+Now lets see some [Layouts](extjs-layouts.md)
 
 
 
