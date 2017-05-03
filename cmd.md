@@ -1,4 +1,6 @@
-sencha cmd
+# Sencha CMD
+
+## Using the CMD
 
 A simple sencha command will usually look like:  
 `sencha [category] [command]`
@@ -7,9 +9,9 @@ Example:
 `sencha app build` //will compile the app at the current folder
 
 
-the options are as follows:
+The options are as follows:
 
-Categories
+```Categories
   * app - Perform various application build processes
   * compile - Compile sources to produce concatenated output and metadata
   * cordova - Quick init Support for Cordova
@@ -34,7 +36,40 @@ Commands
   * js - Executes arbitrary JavaScript file(s)
   * upgrade - Upgrades Sencha Cmd
   * which - Displays the path to the current version of Sencha Cmd
+  ```
   
+## Generating a new App
+
+To generate a new App skeleton:
+`sencha -sdk /extjs-repo generate app AppName /app-name`
+
+## Building the app
+
+To compile sass and bundle the sources for production:  
+`sencha app build`
+
+To compile for development without the bundling part:  
+`sencha app build development`
+
+To compile for development with a watcher and a webserver:  
+`sencha app watch`
+in this case, after compilation the app is available at `http://localhost:1841/`  
+
+## Generating a package
+
+Packages can be dynamically loaded and/or be reused in several projects.  
+To generate a package:  
+`sencha generate package PackageName`  
+
+## Building a package
+
+To build a package:  
+`sencha package build`  
+
+
+
+
+
 
   
   
