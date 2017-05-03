@@ -40,7 +40,7 @@ Commands
   
 ## Generating a new App
 
-To generate a new App skeleton:
+To generate a new App skeleton:  
 `sencha -sdk /extjs-repo generate app AppName /app-name`
 
 ## Building the app
@@ -52,12 +52,13 @@ To compile for development without the bundling part:
 `sencha app build development`
 
 To compile for development with a watcher and a webserver:  
-`sencha app watch`
+`sencha app watch`  
 in this case, after compilation the app is available at `http://localhost:1841/`  
 
 ## Generating a package
 
 Packages can be dynamically loaded and/or be reused in several projects.  
+
 To generate a package:  
 `sencha generate package PackageName`  
 
