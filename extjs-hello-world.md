@@ -1,8 +1,3 @@
-# ExtJS on 1 leg
-
-In this section we will learn the basics of ExtJS, the Class system, Layouts, Components and Stores through short and useful examples.
-
-
 ## Hello World
 Lets compare the Sencha way with the *Raw* way
 
