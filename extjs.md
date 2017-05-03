@@ -14,7 +14,8 @@ In another world a *Hello World* application would take some minimal effort, it 
 - Running a Web server
 
 You need to install a Web server, choose build tools, configure them, install pluging, bundler, CSS preprocessors.
-or alternatively use some boilerplate/Yeoman.  
+or alternatively use some boilerplate/Yeoman.
+
 __Pros__: you get flexibility and a huge community support (provided that you choose carefully).  
 __Cons__: its work and you have to maintain it.
 
