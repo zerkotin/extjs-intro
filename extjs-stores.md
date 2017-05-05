@@ -14,13 +14,13 @@ The best reference for stores since its a complex Object is the [Sencha Document
 Example
 ```javascript
 var store =  Ext.create('Ext.data.Store', { //a store without a model
-             data : [
-                 {firstName: 'Peter',   lastName: 'Venkman'},
-                 {firstName: 'Egon',    lastName: 'Spengler'},
-                 {firstName: 'Ray',     lastName: 'Stantz'},
-                 {firstName: 'Winston', lastName: 'Zeddemore'}
-             ]
-        });
+     data : [
+         {firstName: 'Peter',   lastName: 'Venkman'},
+         {firstName: 'Egon',    lastName: 'Spengler'},
+         {firstName: 'Ray',     lastName: 'Stantz'},
+         {firstName: 'Winston', lastName: 'Zeddemore'}
+     ]
+});
 ```
 
 ### Remote Store
@@ -28,12 +28,12 @@ var store =  Ext.create('Ext.data.Store', { //a store without a model
 Example
 ```javascript
 store = Ext.create('Ext.data.Store', { //ajax store
-             proxy: {
-                 type: 'ajax',
-                 url: 'users.json'
-             },
-             autoLoad: true //this is not a must, but it saves time
-        });
+     proxy: {
+         type: 'ajax',
+         url: 'users.json'
+     },
+     autoLoad: true //this is not a must, but it saves time
+});
 ```
 
 ### Useful Store API
