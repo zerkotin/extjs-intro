@@ -63,7 +63,7 @@ Ext.create('Ext.grid.Panel', {
     controller: 'userscontroller',
 
     bind: {
-        store: 'simpsonsStore'
+        store: '{simpsonsStore}'
     },
 
     listeners: {
