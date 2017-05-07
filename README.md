@@ -7,6 +7,7 @@ Introduction to ExtJS, the Sencha CMD and Siesta
   - [Classes](extjs-classes.md)
   - [Layouts](extjs-layouts.md)
   - [Stores](extjs-stores.md)
+  - [MVC](extjs-mvc.md)
 - [Siesta quicky](siesta.md)
 
 
