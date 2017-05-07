@@ -13,7 +13,7 @@ Lets see a real example using the [Grid](http://docs.sencha.com/extjs/6.2.1/clas
 ```javascript
 Ext.define('Myapp.viewmodel.UsersViewModel', {
     extend: 'Ext.app.ViewModel',
-    alias: 'viewmodel.usersviewmodel',
+    alias: 'viewmodel.user',
     stores: {
         simpsonsStore: {
             storeId: 'simpsonsStore',
@@ -23,17 +23,17 @@ Ext.define('Myapp.viewmodel.UsersViewModel', {
                     name: 'Lisa',
                     email: 'lisa@simpsons.com',
                     phone: '555-111-1224'
-                }, 
+                },
                 {
                     name: 'Bart',
                     email: 'bart@simpsons.com',
                     phone: '555-222-1234'
-                }, 
+                },
                 {
                     name: 'Homer',
                     email: 'homer@simpsons.com',
                     phone: '555-222-1244'
-                }, 
+                },
                 {
                     name: 'Marge',
                     email: 'marge@simpsons.com',
@@ -46,7 +46,7 @@ Ext.define('Myapp.viewmodel.UsersViewModel', {
 
 Ext.define('Myapp.viewcontroller.UsersController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.userscontroller',
+    alias: 'controller.user',
 
     init: function () {
         console.log('controller is started!!! yay!!!');
@@ -57,33 +57,37 @@ Ext.define('Myapp.viewcontroller.UsersController', {
     }
 });
 
-Ext.create('Ext.grid.Panel', {
-    title: 'Simpsons',
-    viewModel: 'usersviewmodel',
-    controller: 'userscontroller',
+Ext.create('Ext.panel.Panel', {
+    viewModel: 'user',
+    controller: 'user',
 
-    bind: {
-        store: '{simpsonsStore}'
-    },
-
-    listeners: {
-        select: 'onGridSelection'
-    },
-
-    columns: [
+    items: [
         {
-            text: 'Name',
-            dataIndex: 'name'
-        }, 
-        {
-            text: 'Email',
-            dataIndex: 'email',
-            flex: 1
-        }, 
-        {
-            text: 'Phone',
-            dataIndex: 'phone'
+            xtype: 'grid',
+            title: 'Simpsons',
+            bind: {
+                store: '{simpsonsStore}'
+            },
+            columns: [
+                {
+                    text: 'Name',
+                    dataIndex: 'name'
+                },
+                {
+                    text: 'Email',
+                    dataIndex: 'email',
+                    flex: 1
+                },
+                {
+                    text: 'Phone',
+                    dataIndex: 'phone'
+                }
+            ],
+            listeners: {
+                select: 'onGridSelection'
+            },
         }
+
     ],
     height: 200,
     width: 400,
