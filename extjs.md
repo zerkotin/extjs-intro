@@ -5,5 +5,5 @@ In this section we will learn the basics of ExtJS, the Class system, Layouts, Co
 - [Classes](extjs-classes.md)
 - [Layouts](extjs-layouts.md)
 - [Stores](extjs-stores.md)
-
+- [MVC](extjs-mvc.md)
 
