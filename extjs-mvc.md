@@ -96,5 +96,3 @@ Ext.create('Ext.panel.Panel', {
 ```
 
 You can see this example in action [here](https://fiddle.sencha.com/#view/editor&fiddle/1v7i)
-
-Have fun coding!
