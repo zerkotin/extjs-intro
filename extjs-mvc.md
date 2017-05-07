@@ -11,5 +11,86 @@ and this is how its done in ExtJS:
 Lets see a real example using the [Grid](http://docs.sencha.com/extjs/6.2.1/classic/Ext.grid.Panel.html)  
 
 ```javascript
-//TODO add code
+Ext.define('Myapp.viewmodel.UsersViewModel', {
+    extend: 'Ext.app.ViewModel',
+    alias: 'viewmodel.usersviewmodel',
+    stores: {
+        simpsonsStore: {
+            storeId: 'simpsonsStore',
+            fields: ['name', 'email', 'phone'],
+            data: [
+                {
+                    name: 'Lisa',
+                    email: 'lisa@simpsons.com',
+                    phone: '555-111-1224'
+                }, 
+                {
+                    name: 'Bart',
+                    email: 'bart@simpsons.com',
+                    phone: '555-222-1234'
+                }, 
+                {
+                    name: 'Homer',
+                    email: 'homer@simpsons.com',
+                    phone: '555-222-1244'
+                }, 
+                {
+                    name: 'Marge',
+                    email: 'marge@simpsons.com',
+                    phone: '555-222-1254'
+                }
+            ]
+        }
+    }
+});
+
+Ext.define('Myapp.viewcontroller.UsersController', {
+    extend: 'Ext.app.ViewController',
+    alias: 'controller.userscontroller',
+
+    init: function () {
+        console.log('controller is started!!! yay!!!');
+    },
+
+    onGridSelection: function() {
+        console.log(arguments);
+    }
+});
+
+Ext.create('Ext.grid.Panel', {
+    title: 'Simpsons',
+    viewModel: 'usersviewmodel',
+    controller: 'userscontroller',
+
+    bind: {
+        store: 'simpsonsStore'
+    },
+
+    listeners: {
+        select: 'onGridSelection'
+    },
+
+    columns: [
+        {
+            text: 'Name',
+            dataIndex: 'name'
+        }, 
+        {
+            text: 'Email',
+            dataIndex: 'email',
+            flex: 1
+        }, 
+        {
+            text: 'Phone',
+            dataIndex: 'phone'
+        }
+    ],
+    height: 200,
+    width: 400,
+    renderTo: Ext.getBody()
+});
 ```
+
+You can see this example in action [here](https://fiddle.sencha.com/#view/editor&fiddle/1v7i)
+
+Have fun coding!
