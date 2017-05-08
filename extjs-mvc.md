@@ -1,7 +1,7 @@
 # MVC / MVVM
 Yes, some call it MVC, some MVVM, there are so many theories out there and the borders are very blury.  
 In general, we have a Seperation of Concern with Model/View/Controller.  
-and this is how its done in ExtJS:  
+and this is how it's done in ExtJS:  
 - [Ext.data.Model](http://docs.sencha.com/extjs/6.2.1/classic/Ext.data.Model.html)
 - [Ext.data.Store](http://docs.sencha.com/extjs/6.2.1/classic/Ext.data.Store.html)
 - [Ext.app.ViewModel](http://docs.sencha.com/extjs/6.2.1/classic/Ext.app.ViewModel.html)
