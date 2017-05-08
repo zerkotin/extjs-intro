@@ -12,7 +12,7 @@ You need to install a Web server, choose build tools, configure them, install pl
 or alternatively use some boilerplate/Yeoman.
 
 __Pros__: you get flexibility and a huge community support (provided that you choose carefully).  
-__Cons__: its work and you have to maintain it.
+__Cons__: it's work and you have to maintain it.
 
 ### The Sencha way of hello world
 Now what will creating a _Hello World_ application in ExtJS consist of? lets see...  
