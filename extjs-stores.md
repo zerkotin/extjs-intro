@@ -14,7 +14,7 @@ Since its a complex Object the best reference for the store is the [Sencha Docum
 Example
 ```javascript
 var store =  Ext.create('Ext.data.Store', { //a store without a model
-     data : [
+     data: [
          {firstName: 'Peter',   lastName: 'Venkman'},
          {firstName: 'Egon',    lastName: 'Spengler'},
          {firstName: 'Ray',     lastName: 'Stantz'},
