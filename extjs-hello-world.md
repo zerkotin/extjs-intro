@@ -42,10 +42,7 @@ But, enough with CMD, lets see some code examples...
 
 ### Hello world
 ```
-Ext.Viewport.add({
-    xtype: 'panel',
-    html: 'Hello World!'
-});
+Ext.create('Ext.panel.Panel',{html: 'Hello World!'});
 ```
 What do we see here? a _Viewport_, and what is that _xtype_ ?  
 We will get there, lets start with [Ext Classes](extjs-classes.md) first.
