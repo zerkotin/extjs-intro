@@ -79,7 +79,7 @@ Ext.create('Ext.panel.Panel', {
     renderTo: Ext.getBody(),
     requires: [ //mind the requires config
       'My.sample.Person'
-    ]
+    ],
     items: [
         {
             xtype: 'person' //we have a person component
