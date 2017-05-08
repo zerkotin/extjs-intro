@@ -1,5 +1,5 @@
 # ExtJS Class System
-First of all, we need a place to practice, we can practice all at [Sencha Fiddle](http://fiddle.sencha.com)
+First of all, we need a place to practice, we can practice all of this at [Sencha Fiddle](http://fiddle.sencha.com)
 
 ## A simple class
 Lets create a simple class in ExtJS syntax
