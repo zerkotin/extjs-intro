@@ -20,7 +20,7 @@ Now what will creating a _Hello World_ application in ExtJS consist of? lets s
 - Running `sencha app watch`
 
 You have a running webserver and an application with a whole skeleton.  
-Not to mention you also have all the following:
+Not to mention you also have all of the following:
 - Build tools setup
 - Repository
 - Sass
@@ -36,7 +36,7 @@ Not to mention you also have all the following:
 - Touch support
 
 __Pros__: saves lots of time.  
-__Cons__: not flexible, uncostumizable and support is from Sencha provided you bought ExtJS license or found your answers on the internet.
+__Cons__: not flexible, uncostumizable and support is from Sencha provided you bought an ExtJS license or found your answers on the internet.
 
 But, enough with CMD, lets see some code examples...
 
