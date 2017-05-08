@@ -65,7 +65,7 @@ What can we make of it?
 3. there's that _xtype_ again, what is that?!
 
 ### xtype and requires
-Altough it has nothing to do specifically with _Layouts_ it does requires a short explanation.
+Although it has nothing to do specifically with _Layouts_ it does require a short explanation.
 
 Consider the next example
 ```javascript
