@@ -15,7 +15,7 @@ __Pros__: you get flexibility and a huge community support (provided that you ch
 __Cons__: its work and you have to maintain it.
 
 ### The Sencha way of hello world
-Now what will consist of creating a *Hello World* application in ExtJS, lets see...
+Now what will creating a _Hello World_ application in ExtJS consist of? lets see... ...
 - Running a *Generate Command* (you can take a peak into the [CMD page](cmd.md))
 - Running `sencha app watch`
 
