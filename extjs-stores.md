@@ -2,7 +2,7 @@
 Stores are used for data storage, it can be stored on the Client or Server side
 
 ## A simple store
-The store is a very complex Object, lets break it down to the necesities
+The store is a very complex Object, lets break it down to the necessities  
 1. Local Store
 2. Remote Store
 
