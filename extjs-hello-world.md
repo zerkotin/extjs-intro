@@ -47,7 +47,7 @@ Ext.create('Ext.panel.Panel',{
   renderTo: Ext.getBody()
 });
 ```
-What do we see here? a _Viewport_, and what is that _xtype_ ?  
+What do we see here? a _Panel_, and what is that _Ext.create_ ?  
 We will get there, lets start with [Ext Classes](extjs-classes.md) first.
 
 
